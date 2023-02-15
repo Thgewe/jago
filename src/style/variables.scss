@@ -1,0 +1,65 @@
+:root {
+  // colors
+
+  --color-error: #DF2029;
+  --color-placeholder: #acacac;
+
+  // fonts
+
+  --font-latin: 'Montserrat', sans-serif;
+  --font-japanese: 'Noto Sans JP', sans-serif;
+
+  // paddings & margins
+
+  --padding-header: 20px;
+
+  // dimensions
+
+  --max-width-content: 1440px;
+  --height-header: 66px;
+  --width-archive-list: 360px;
+
+  // text
+
+  --text-size-title-bg: 40px;
+  --text-size-title-md: 36px;
+  --text-size-bg: 20px;
+  --text-size-md: 18px;
+  --text-size-sm: 16px;
+  --text-size-button: 18px;
+  --text-weight-link: 500;
+
+  // other
+
+  --border-radius-sm: 4px;
+  --transition-default: all 0.3s;
+  --line-height-coef: 1.5;
+}
+#root-app[data-theme="light"] {
+  --color-text-primary: #2c2c2c;
+  --color-text-header: #202020;
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #cecece;
+  --color-inactive: #acacac;
+  --color-elements: #202020;
+  --color-border: #acacac;
+  --color-scrollbar-track: #acacac;
+  --color-scrollbar-thumb: #2c2c2c;
+  --color-text-input: #202020;
+  --color-text-link: #088488;
+  --color-text-highlight: #2c2c2c;
+}
+#root-app[data-theme="dark"] {
+  --color-text-primary: #e6e6e6;
+  --color-text-header: #ffffff;
+  --color-bg-primary: #2c2c2c;
+  --color-bg-secondary: #202020;
+  --color-inactive: #646464;
+  --color-elements: #d9d9d9;
+  --color-border: #646464;
+  --color-scrollbar-track: #d9d9d9;
+  --color-scrollbar-thumb: #646464;
+  --color-text-input: #2c2c2c;
+  --color-text-link: #e8af20;
+  --color-text-highlight: #ffffff;
+}
