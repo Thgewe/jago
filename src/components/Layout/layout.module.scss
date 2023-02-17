@@ -4,10 +4,13 @@
   min-height: 100vh;
 }
 
+.container {
+  background-color: var(--color-bg-secondary);
+  flex: 2;
+}
+
 .main {
   margin: 0 auto;
-  width: 100%;
   padding: var(--padding-header);
   max-width: var(--max-width-content);
-  flex: 2;
 }
