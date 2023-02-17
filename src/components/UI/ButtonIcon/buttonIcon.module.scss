@@ -1,0 +1,13 @@
+.button {
+  height: var(--height-button-icon);
+  width: var(--width-button-icon);
+  color: var(--color-elements);
+  border: none;
+  background-color:transparent;
+  cursor: pointer;
+
+  & svg {
+    width: 100%;
+    height: 100%;
+  }
+}

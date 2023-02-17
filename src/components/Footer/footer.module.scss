@@ -1,0 +1,16 @@
+.footer {
+  background-color: var(--color-bg-secondary);
+}
+
+.container {
+  padding: var(--padding-header);
+  color: var(--color-text-header);
+  max-width: var(--max-width-content);
+  margin: 0 auto;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(5rem, 10rem));
+  list-style: none;
+}

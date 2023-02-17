@@ -24,7 +24,9 @@ export const authSlice = createSlice({
         trySignUp(state: IAuth, action: IAuthAction) {
             return {...state, loading: true}
         },
-        trySignOut() {},
+        trySignOut(state: IAuth) {
+            return {...state, loading: true}
+        },
         signOutAction(state: IAuth) {
             localStorage.setItem(localStorageAuth, 'false')
             return {...state, authorized: false, error: null, loading: false}

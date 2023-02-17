@@ -1,0 +1,19 @@
+.header {
+  background-color: var(--color-bg-primary);
+}
+
+.container {
+  max-width: var(--max-width-content);
+  padding: var(--padding-header);
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  display: block;
+  width: var(--width-logo);
+  height: var(--height-logo);
+  background: var(--logo-bg) no-repeat center/contain;
+}

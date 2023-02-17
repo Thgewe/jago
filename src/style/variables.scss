@@ -11,13 +11,19 @@
 
   // paddings & margins
 
-  --padding-header: 20px;
+  --padding-header: .75rem 1rem;
 
   // dimensions
 
   --max-width-content: 1440px;
   --height-header: 66px;
   --width-archive-list: 360px;
+
+  --width-logo: 4rem;
+  --height-logo: 2rem;
+
+  --width-button-icon: 1.75rem;
+  --height-button-icon: 1.75rem;
 
   // text
 
@@ -35,7 +41,31 @@
   --border-radius-md: .5rem;
   --transition-default: all 0.3s;
   --line-height-coef: 1.5;
+
+
+  @media (min-width: 576px) {
+    --padding-header: 1rem 1.25rem;
+    --width-logo: 5rem;
+    --height-logo: 2.5rem;
+
+    --width-button-icon: 2rem;
+    --height-button-icon: 2rem;
+  }
+  @media (min-width: 768px) {
+
+  }
+  @media (min-width: 992px) {
+    --width-logo: 6rem;
+    --height-logo: 3rem;
+
+    --width-button-icon: 2.5rem;
+    --height-button-icon: 2.5rem;
+  }
+  @media (min-width: 1200px) {
+
+  }
 }
+
 #root-app[data-theme="light"] {
   --color-text-primary: #2c2c2c;
   --color-text-header: #202020;
@@ -50,6 +80,7 @@
   //--color-text-link: #088488;
   --color-text-link: #00e59b;
   --color-text-highlight: #2c2c2c;
+  --logo-bg: url("../images/svg/jago-logo-light.svg");
 }
 #root-app[data-theme="dark"] {
   --color-text-primary: #e6e6e6;
@@ -64,4 +95,5 @@
   --color-text-input: #2c2c2c;
   --color-text-link: #e8af20;
   --color-text-highlight: #ffffff;
+  --logo-bg: url("../images/svg/jago-logo-dark.svg");
 }
