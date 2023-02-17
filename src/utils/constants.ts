@@ -6,5 +6,6 @@ export const DICTIONARY_ID_ROUTE = '/dictionary/:id'
 
 
 export const localStorageTheme = 'theme'
+export const localStorageAuth = 'auth'
 export const themeLight = 'light'
 export const themeDark = 'dark'

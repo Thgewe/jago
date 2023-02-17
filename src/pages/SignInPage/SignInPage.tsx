@@ -1,10 +1,11 @@
 import React from 'react';
 import cl from './signInPage.module.scss';
+import AuthForm from "../../components/AuthForm/AuthForm";
 
 const SignInPage = () => {
     return (
-        <div className={cl.sign}>
-            sign in
+        <div className={cl.page}>
+            <AuthForm isSignIn={true}/>
         </div>
     );
 };

@@ -3,12 +3,11 @@ import {Navigate, Route, Routes} from "react-router-dom";
 import {privateRoutes, publicRoutes} from "../utils/routes";
 import {HOME_ROUTE, SIGNIN_ROUTE} from "../utils/constants";
 import Layout from "./Layout/Layout";
-
-// TODO: add auth state
+import {useAppSelector} from "../hooks/redux";
 
 const AppRouter = () => {
 
-    const auth = true
+    const auth = useAppSelector(state => state.authReducer.authorized)
 
     return auth ?
         <Layout>

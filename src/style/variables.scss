@@ -21,17 +21,18 @@
 
   // text
 
-  --text-size-title-bg: 40px;
-  --text-size-title-md: 36px;
-  --text-size-bg: 20px;
-  --text-size-md: 18px;
-  --text-size-sm: 16px;
-  --text-size-button: 18px;
+  --text-size-title-bg: 2.5rem;
+  --text-size-title-md: 2.25rem;
+  --text-size-bg: 1.25rem;
+  --text-size-md: 1.125rem;
+  --text-size-sm: 1rem;
+  --text-size-button: 1.125rem;
   --text-weight-link: 500;
 
   // other
 
-  --border-radius-sm: 4px;
+  --border-radius-sm: .25rem;
+  --border-radius-md: .5rem;
   --transition-default: all 0.3s;
   --line-height-coef: 1.5;
 }
@@ -46,7 +47,8 @@
   --color-scrollbar-track: #acacac;
   --color-scrollbar-thumb: #2c2c2c;
   --color-text-input: #202020;
-  --color-text-link: #088488;
+  //--color-text-link: #088488;
+  --color-text-link: #00e59b;
   --color-text-highlight: #2c2c2c;
 }
 #root-app[data-theme="dark"] {

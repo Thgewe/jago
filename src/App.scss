@@ -1,3 +1,8 @@
-.app {
+@import './style/mixins';
 
+.app {
+  font-family: var(--font-latin);
+}
+.loading {
+  @include pageCenter;
 }
