@@ -18,7 +18,7 @@ export const authSlice = createSlice({
             return {...state, loading: true}
         },
         signIn(state: IAuth) {
-            localStorage.setItem('user', 'true')
+            localStorage.setItem(localStorageAuth, 'true')
             return {...state, authorized: true, error: null, loading: false}
         },
         trySignUp(state: IAuth, action: IAuthAction) {
@@ -26,7 +26,7 @@ export const authSlice = createSlice({
         },
         trySignOut() {},
         signOutAction(state: IAuth) {
-            localStorage.setItem('user', 'false')
+            localStorage.setItem(localStorageAuth, 'false')
             return {...state, authorized: false, error: null, loading: false}
         },
         setAuthError(state: IAuth, action: IAuthErrorAction) {
