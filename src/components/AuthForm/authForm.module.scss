@@ -1,9 +1,11 @@
 .auth {
   width: min-content;
-  padding: 1rem;
+  padding: 1.5rem;
   background-color: var(--color-bg-primary);
   border-radius: var(--border-radius-md);
   position: relative;
+  z-index: 100;
+  box-shadow: 0 0 1rem 0.25rem var(--color-bg-primary);
 
   & h1 {
     font-size: calc(var(--text-size-bg) + 0.5rem);
