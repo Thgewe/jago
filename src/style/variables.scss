@@ -34,6 +34,7 @@
   --text-size-sm: 1rem;
   --text-size-button: 1.125rem;
   --text-weight-link: 500;
+  --text-size-nav: 1rem;
 
   // other
 
@@ -41,7 +42,10 @@
   --border-radius-md: .5rem;
   --transition-default: all 0.3s;
   --line-height-coef: 1.5;
-
+  --display-mobile-block: block;
+  --display-mobile-flex: flex;
+  --display-tablet-block: none;
+  --display-tablet-flex: none;
 
   @media (min-width: 576px) {
     --padding-header: 1rem 1.25rem;
@@ -50,6 +54,11 @@
 
     --width-button-icon: 2rem;
     --height-button-icon: 2rem;
+
+    --display-mobile-block: none;
+    --display-mobile-flex: none;
+    --display-tablet-block: block;
+    --display-tablet-flex: flex;
   }
   @media (min-width: 768px) {
 
@@ -57,6 +66,7 @@
   @media (min-width: 992px) {
     --width-logo: 6rem;
     --height-logo: 3rem;
+    --text-size-nav: 1.25rem;
   }
   @media (min-width: 1200px) {
 
@@ -74,8 +84,7 @@
   --color-scrollbar-track: #acacac;
   --color-scrollbar-thumb: #2c2c2c;
   --color-text-input: #202020;
-  //--color-text-link: #088488;
-  --color-text-link: #00e59b;
+  --color-text-link: #00e59b; //#088488
   --color-text-highlight: #2c2c2c;
   --logo-bg: url("../images/svg/jago-logo-light.svg");
 }

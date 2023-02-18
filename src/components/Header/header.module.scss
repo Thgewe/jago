@@ -12,10 +12,17 @@
   justify-content: space-between;
 }
 
-.right {
+
+.left, .right {
   display: flex;
   align-items: center;
-
+}
+.left {
+  & button {
+    display: var(--display-mobile-block);
+  }
+}
+.right {
   & button:first-child {
     margin-right: 1.5rem;
     width: calc(var(--width-button-icon) - 0.3rem);

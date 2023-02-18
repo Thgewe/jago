@@ -12,6 +12,7 @@ interface IRouteNested {
 interface IRoute {
     path: string,
     name: string,
+    text?: string,
     element: ReactNode,
     nested?: IRouteNested[],
 }
@@ -33,5 +34,6 @@ export const privateRoutes:IRoute[] = [
         path: HOME_ROUTE,
         name: 'home',
         element: <HomePage />,
+        text: 'ГЛАВНАЯ',
     }
 ]
