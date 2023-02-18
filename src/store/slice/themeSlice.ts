@@ -12,9 +12,13 @@ export const themeSlice = createSlice({
     initialState,
     reducers: {
         toggleTheme(state) {
-            return state === themeLight
-                ? themeDark
-                : themeLight
+            if (state === themeLight) {
+                localStorage.setItem(localStorageTheme, themeDark)
+                return themeDark
+            } else {
+                localStorage.setItem(localStorageTheme, themeLight)
+                return themeLight
+            }
         }
     }
 })
