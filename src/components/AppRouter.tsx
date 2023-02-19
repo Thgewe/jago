@@ -15,7 +15,9 @@ const AppRouter = () => {
                 {privateRoutes.map(({path, nested, name, element}) =>
                     <Route key={name} path={path} element={element}>
                         {nested && nested.map((item) =>
-                            <Route path={item.path} element={item.element}/>
+                            item.index
+                                ? <Route index={item.index} element={item.element} />
+                                : <Route path={item.path} element={item.element} />
                         )}
                     </Route>
                 )}

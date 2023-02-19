@@ -1,0 +1,14 @@
+.input {
+  width: 100%;
+  height: fit-content;
+  padding: .125rem .5rem;
+  border-radius: var(--border-radius-md);
+  border: 1px solid var(--color-border);
+  font-size: 1rem;
+  font-family: var(--font-japanese);
+  background-color: var(--color-bg-input);
+
+  &::placeholder{
+    font-family: var(--font-latin);
+  }
+}

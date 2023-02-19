@@ -1,0 +1,80 @@
+.line {
+  display: grid;
+  max-width: 1000px;
+  margin: 0 auto;
+  column-gap: 0.5rem;
+  grid-template-areas:
+          'a b c'
+          'd z z';
+
+  & + & {
+    margin-top: 0.5rem;
+    padding-top: calc(0.5rem + 1px);
+    border-top: 1px dashed var(--color-border);
+  }
+}
+.field {
+  background-color: transparent;
+  color: var(--color-text-primary);
+  border: none;
+  font-size: var(--text-size-md);
+  resize: vertical;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &.hide {
+    color: transparent;
+    @supports (-webkit-text-security: disc) {
+      -webkit-text-security: disc;
+      color: var(--color-text-primary);
+    }
+
+    &:focus {
+      color: var(--color-text-primary);
+      -webkit-text-security: initial;
+    }
+    &:hover {
+      color: var(--color-text-primary);
+      -webkit-text-security: initial;
+    }
+  }
+}
+
+.japanese {
+  font-family: var(--font-japanese);
+  grid-area: a;
+  & + & {
+    text-align: center;
+    grid-area: b;
+  }
+}
+
+.latin {
+  font-family: var(--font-latin);
+  text-align: right;
+  grid-area: c;
+  &:focus {
+    text-align: left;
+  }
+}
+
+//used to determine the field height
+.plug {
+  grid-area: d;
+  position: relative;
+  opacity: 0;
+  user-select: none;
+  pointer-events: none;
+  background-color: red;
+  & div {
+    position: absolute;
+    width: calc(100% - 8px);
+    font-size: var(--text-size-md);
+    word-break: break-word;
+    font-family: var(--font-japanese);
+    background-color: red;
+    all-space-treatment: preserve;
+  }
+}

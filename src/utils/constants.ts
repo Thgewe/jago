@@ -4,7 +4,9 @@ export const HOME_ROUTE = '/home'
 export const DICTIONARY_ROUTE = '/dictionary'
 export const DICTIONARY_ID_ROUTE = '/dictionary/:id'
 
-
+export const localStorageHideWord = 'wordHide'
+export const localStorageHideReading = 'readingHide'
+export const localStorageHideTranslation = 'translationHide'
 export const localStorageTheme = 'theme'
 export const localStorageAuth = 'auth'
 export const themeLight = 'light'

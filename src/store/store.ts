@@ -3,6 +3,7 @@ import createSagaMiddleware from 'redux-saga'
 import {rootWatcher} from "./saga";
 import themeReducer from "./slice/themeSlice";
 import authReducer from "./slice/authSlice";
+import hideReducer from "./slice/hideSlice";
 
 const sagaMiddleware = createSagaMiddleware()
 
@@ -10,6 +11,7 @@ export const store = configureStore({
     reducer: {
         themeReducer,
         authReducer,
+        hideReducer,
     },
     middleware: [sagaMiddleware],
 })

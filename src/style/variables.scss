@@ -75,6 +75,7 @@
 
 #root-app[data-theme="light"] {
   --color-text-primary: #2c2c2c;
+  --color-text-primary-hover: #000000;
   --color-text-header: #202020;
   --color-bg-primary: #ffffff;
   --color-bg-secondary: #cecece;
@@ -86,10 +87,13 @@
   --color-text-input: #202020;
   --color-text-link: #00e59b; //#088488
   --color-text-highlight: #2c2c2c;
+  --color-bg-input: #ffffff;
+  --color-bg-always-dark: #515151;
   --logo-bg: url("../images/svg/jago-logo-light.svg");
 }
 #root-app[data-theme="dark"] {
-  --color-text-primary: #e6e6e6;
+  --color-text-primary: #cecece;
+  --color-text-primary-hover: #ffffff;
   --color-text-header: #ffffff;
   --color-bg-primary: #2c2c2c;
   --color-bg-secondary: #202020;
@@ -101,5 +105,7 @@
   --color-text-input: #2c2c2c;
   --color-text-link: #e8af20;
   --color-text-highlight: #ffffff;
+  --color-bg-input: #eaeaea;
+  --color-bg-always-dark: #2c2c2c;
   --logo-bg: url("../images/svg/jago-logo-dark.svg");
 }
