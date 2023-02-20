@@ -18,9 +18,13 @@ const AuthForm: FC<IAuthFormProps>= ({isSignIn}) => {
     const {loading, error} = useAppSelector(state => state.authReducer)
     const dispatch = useAppDispatch()
 
-    useEffect(() => {
-        dispatch(nullError())
-    }, [])
+    const changeHandler = (
+        e: React.ChangeEvent<HTMLInputElement>,
+        setState: React.Dispatch<React.SetStateAction<string>>
+    ) => {
+        error && dispatch(nullError())
+        setState(e.target.value)
+    }
 
     const onSubmit = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault()
@@ -40,14 +44,14 @@ const AuthForm: FC<IAuthFormProps>= ({isSignIn}) => {
                     type="text"
                     placeholder={'Почта'}
                     value={email}
-                    onChange={(e) => setEmail(e.target.value)}
+                    onChange={(e) => changeHandler(e, setEmail)}
                     tabIndex={loading ? -1 : 0}
                 />
                 <input
                     type="password"
                     placeholder={'Пароль'}
                     value={password}
-                    onChange={(e) => setPassword(e.target.value)}
+                    onChange={(e) => changeHandler(e, setPassword)}
                     tabIndex={loading ? -1 : 0}
                 />
                 {isSignIn
