@@ -32,7 +32,11 @@ const Header = () => {
             <BurgerMenu open={burgerState} setOpen={setBurgerState}/>
             <div className={cl.container}>
                 <div className={cl.left}>
-                    <ButtonIcon Icon={<Burger />} clickHandler={() => setBurgerState(true)} />
+                    <ButtonIcon
+                        title={'Меню навигации'}
+                        Icon={<Burger />}
+                        clickHandler={() => setBurgerState(true)}
+                    />
                     <Link
                         className={cl.logo}
                         to={HOME_ROUTE}
@@ -43,10 +47,12 @@ const Header = () => {
                 <Navbar />
                 <div className={cl.right}>
                     <ButtonIcon
+                        title={'Сменить тему'}
                         Icon={theme === themeLight ? <Moon /> : <Sun />}
                         clickHandler={() => dispatch(toggleTheme())}
                     />
                     <ButtonIcon
+                        title={'Выйти'}
                         Icon={authLoading ? <Loader /> : <SignOut />}
                         clickHandler={signOutHandler}
                     />

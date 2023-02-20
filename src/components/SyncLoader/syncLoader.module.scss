@@ -1,0 +1,27 @@
+.sync {
+  position: fixed;
+  left: .75rem;
+  bottom: 6rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  transform: translateX(-4rem);
+  pointer-events: none;
+  transition: transform .3s;
+  &.active {
+    transform: translateX(0);
+  }
+  &.error {
+    transform: translateX(0);
+    width: fit-content;
+    margin-right: .75rem;
+    word-break: break-word;
+  }
+  &.active.error  {
+    transform: translateX(0);
+  }
+}
+.errorBlock {
+  padding: .5rem;
+  background-color: var(--color-error);
+  color: #fff;
+}

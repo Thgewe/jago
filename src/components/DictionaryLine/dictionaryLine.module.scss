@@ -19,9 +19,9 @@
   border: none;
   font-size: var(--text-size-md);
   resize: vertical;
-
+  padding-right: .5rem;
   &::-webkit-scrollbar {
-    width: 8px;
+    width: .5rem;
   }
 
   &.hide {
@@ -70,10 +70,11 @@
   background-color: red;
   & div {
     position: absolute;
+    min-height: 1.5rem;
     width: calc(100% - 8px);
     font-size: var(--text-size-md);
     word-break: break-word;
-    font-family: var(--font-japanese);
+    //font-family: var(--font-japanese);
     background-color: red;
     all-space-treatment: preserve;
   }

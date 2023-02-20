@@ -4,6 +4,9 @@ import {rootWatcher} from "./saga";
 import themeReducer from "./slice/themeSlice";
 import authReducer from "./slice/authSlice";
 import hideReducer from "./slice/hideSlice";
+import listOfKanjiReducer from "./slice/listOfKanjiSlice";
+import linesReducer from "./slice/linesSlice";
+import syncReducer from "./slice/syncSlice";
 
 const sagaMiddleware = createSagaMiddleware()
 
@@ -12,6 +15,9 @@ export const store = configureStore({
         themeReducer,
         authReducer,
         hideReducer,
+        listOfKanjiReducer,
+        linesReducer,
+        syncReducer,
     },
     middleware: [sagaMiddleware],
 })

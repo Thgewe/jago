@@ -32,7 +32,7 @@ const BurgerMenu: FC<IBurgerMenuProps> = ({open, setOpen}) => {
         <dialog ref={modal} onTransitionEnd={transitionEndHandler} className={cl.modal}>
             <Navbar vertical={true} handler={() => setOpen(false)}/>
             <div className={cl.bottom} onClick={() => setOpen(false)}>
-                <ButtonIcon Icon={<Back />} clickHandler={() => {}} />
+                <ButtonIcon Icon={<Back />} clickHandler={() => {}} title={'Закрыть меню'}/>
             </div>
         </dialog>
     );

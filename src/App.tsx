@@ -6,6 +6,7 @@ import {useAppDispatch, useAppSelector} from "./hooks/redux";
 import {auth} from "./firebase";
 import {signIn, signOutAction} from "./store/slice/authSlice";
 import Loader from "./components/Loader";
+import SyncLoader from "./components/SyncLoader/SyncLoader";
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
                     </div>
                     : <AppRouter />
                 }
+                <SyncLoader />
             </div>
         </BrowserRouter>
     );
