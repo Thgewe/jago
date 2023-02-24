@@ -54,6 +54,7 @@ const Dictionary = () => {
                         </div>
                         {lines.loading ? <Loader /> : lines.lines[params.id] && lines.lines[params.id].map((line) =>
                             <DictionaryLine
+                                key={line.id}
                                 word={line.word}
                                 reading={line.reading}
                                 translation={line.translation}

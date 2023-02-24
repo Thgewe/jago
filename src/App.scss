@@ -1,6 +1,7 @@
 @import './style/mixins';
 
 .app {
+  height: 100%;
   font-family: var(--font-latin);
 }
 .loading {

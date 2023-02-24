@@ -19,7 +19,7 @@ const Navbar: FC<INavbarProps> = ({vertical, handler}) => {
             }}
         >
             {privateRoutes.map((route) =>
-                <NavLink to={route.path}>{route.text}</NavLink>
+                <NavLink key={route.name} to={route.path}>{route.text}</NavLink>
             )}
         </nav>
     );

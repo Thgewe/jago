@@ -1,4 +1,4 @@
-import React, {FC, FormEvent, useEffect, useState} from 'react';
+import React, {FC, FormEvent, useState} from 'react';
 import cl from './authForm.module.scss'
 import {Link} from "react-router-dom";
 import {SIGHUP_ROUTE, SIGNIN_ROUTE} from "../../utils/constants";
