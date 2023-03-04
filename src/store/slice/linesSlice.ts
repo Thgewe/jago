@@ -47,11 +47,11 @@ export const linesSlice = createSlice({
                     ...state.lines,
                     [action.payload.origin]: state.lines[action.payload.origin].map((line) =>
                         action.payload.id === line.id ? ({
-                            id: line.id,
-                            origin: line.origin,
-                            word: line.word,
-                            reading: line.reading,
-                            translation: line.translation,
+                            id: action.payload.id,
+                            origin: action.payload.origin,
+                            word: action.payload.word,
+                            reading: action.payload.reading,
+                            translation: action.payload.translation,
                         }) : line)
                 }
             }
